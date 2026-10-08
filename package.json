@@ -1,0 +1,23 @@
+{
+  "name": "inkplain-local-runner",
+  "version": "0.2.0",
+  "description": "Runs Simulator Code Editor workspaces on this machine (Python venv, npm) so the browser can call them on localhost.",
+  "type": "module",
+  "bin": {
+    "inkplain-runner": "runner.mjs"
+  },
+  "scripts": {
+    "start": "node runner.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
+  }
+}
